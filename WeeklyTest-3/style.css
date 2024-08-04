@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f0f0f0; */
+    background-color: #96534ad6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: #429ed4fb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.products-box,
+.cart-box {
+    padding: 20px;
+    border-radius: 10px;
+    width: 19rem;
+    background-color: #95cddff6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-box h2,
+.cart-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.product-item,
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #dfe4ea;
+    border-radius: 8px;
+    letter-spacing: 0.23rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-item:hover,
+.cart-item:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#cart-list {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 732;
+    font-size: 0.841rem;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group button {
+    background-color: #2980b9;
+    color: white;
+    /* text-align: center; */
+    font-size: 0.911rem;
+    border: none;
+    padding: 5px 10px;
+    padding-left: 9px;
+    cursor: pointer;
+    border-radius: 23%;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #3498db;
+}
+
+.button-group span {
+    margin: 0 10px;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.total span {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.clear-btn {
+    background-color: #e74d3cdd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 7.5rem;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: 0.412rem;
+    transition: background-color 0.3s ease-out;
+}
+
+svg, svg:hover{
+    transition: 0.76s ease-in-out;
+}
+
+svg:hover{
+    transform: rotate(360deg);
+    size: 3rem;
+}
+
+.clear-btn:hover {
+    background-color: #f46d5ede;
+    transition: background-color 0.43s ease-in;
+}
